@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+  font-weight: 600;
+}
+
+header {
+  background-color: #494343;
+  height: 4rem;
+  width: 100%;
+}
+
+nav {
+  background-color: #494343;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: auto;
+}
+
+.logo {
+  margin-left: 2rem;
+  cursor: pointer;
+  transition: all .3s;
+  font-size: 1.5rem;
+}
+
+.logo:hover {
+  color: aqua;
+  transform: scale(1.6);
+  filter: drop-shadow(0 0 .31rem);
+}
+
+.nav-menu {
+  display: flex;
+  gap: 2rem;
+  margin-right: 2rem;
+}
+
+.nav-menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: auto;
+  position: relative;
+}
+
+.nav-menu ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 1.25rem 20px;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.nav-menu ul li:hover {
+  background-color: black;
+  outline: 1px solid gray;
+  color: aqua;
+  text-shadow: 0 0 .4375rem cadetblue;
+}
+
+button {
+  border-radius: 10px;
+  /* height: 2rem; */
+  background-color: cadetblue;
+  color: aqua;
+  padding: .5rem .875rem;
+  margin-right: 1rem;
+  cursor: pointer;
+  box-shadow: 0 0 .4375rem cadetblue;
+  border: none;
+  transition: all .3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+
+/* ----------------drop-down----------------- */
+
+.dropDown {
+  display: none;
+
+}
+
+ul li:hover .dropDown {
+  background-color: #494343;
+  position: absolute;
+  top: 3.9rem;
+  left: -5px;
+  display: block;
+}
+
+
+.dropDown ul {
+  gap: 1rem;
+  transition: all .3s;
+  display: flex;
+  flex-direction: column;
+}
